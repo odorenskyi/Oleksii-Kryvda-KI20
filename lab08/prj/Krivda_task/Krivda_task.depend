@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1618418571 source:d:\github\oleksii-kryvda-kb20\lab08\prj\krivda_task\main.cpp
+	<iostream>
+	<ModulesKrivda.h>
+	<windows.h>
+	<locale.h>
+	<stdio.h>
+

@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1618420332 source:d:\github\oleksii-kryvda-kb20\lab08\prj\testdriver\main.cpp
+	<iostream>
+	<cmath>
+	"ModulesKrivda.h"
+	<stdio.h>
+
