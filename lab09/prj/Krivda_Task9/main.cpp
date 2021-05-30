@@ -41,6 +41,7 @@ int main()
                 cout << "Введiть значення b: ";
                 cin >> b;
                 cout << "a + 5 >= b: " << boolalpha << (a + 5 >= b) << endl;
+                cout << "Результат роботи s_calculation: " << s_calculation(x, y, z) << endl;
                 break;
             }
             case 'r':{
