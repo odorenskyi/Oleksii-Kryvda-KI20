@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1622056795 source:d:\github\oleksii-kryvda-kb20\lab09\prj\krivda_task9\main.cpp
+1622736900 source:d:\github\oleksii-kryvda-kb20\lab09\prj\krivda_task9\main.cpp
 	<iostream>
 	"ModulesKrivda.h"
 	<windows.h>

@@ -92,9 +92,9 @@ int main()
                     }
                 }while (n < 0 || n > 40008050);
                 if((n>>15)&1){
-                    cout << "Кiлькiсть двiйкових одиниць = " << BinD15(n) << endl << endl;
-                }else{
                     cout << "Кiлькiсть двiйкових нулiв = " << BinD15(n) << endl << endl;
+                }else{
+                    cout << "Кiлькiсть двiйкових одиниць = " << BinD15(n) << endl << endl;
                 }
                 break;
             }

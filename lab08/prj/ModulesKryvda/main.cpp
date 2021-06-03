@@ -67,9 +67,9 @@ int BinD15(int N){
             }
         if (flag){
             if((N>>15)&1){
-                result += ((N>>n)&1)? 1 : 0;
-            }else{
                 result += ((N>>n)&1)? 0 : 1;
+            }else{
+                result += ((N>>n)&1)? 1 : 0;
             }
         }
     }
