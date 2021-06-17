@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1623358890 source:d:\github\oleksii-kryvda-kb20\lab10\prj\krivda_task10\main.cpp
+	<iostream>
+	<fstream>
+	<wchar.h>
+	<io.h>
+	<fcntl.h>
+	<string>
+	<cstdlib>
+	<sstream>
+	<codecvt>
+	<ctime>
+	<bitset>
+	<cmath>
+	<locale>
+	"ModulesKrivda.h"
+
