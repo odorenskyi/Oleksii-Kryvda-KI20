@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1623964084 source:d:\github\oleksii-kryvda-kb20\lab08\prj\moduleskryvda\main.cpp
+	"ModulesKrivda.h"
+	<iostream>
+	<math.h>
+	<string>
+	<clocale>
+	<stdlib.h>
+	<fstream>
+	<wchar.h>
+	<io.h>
+	<fcntl.h>
+	<clocale>
+	<cstdlib>
+	<sstream>
+	<codecvt>
+	<ctime>
+	<bitset>
+	<cmath>
+

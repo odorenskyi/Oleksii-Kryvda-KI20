@@ -196,40 +196,80 @@ void second_funct()
 
     input_time(conv);
 }
-int f_resofscalc(char *outputName){
+    double calculations_s(double x, double y, double z)
+{
+    double s = M_PI*x+pow(M_E,abs(y))-sqrt(abs(pow(z,2)-y)) ;
+    return s;
+}
+int dec2bin(int num)
+{
+    int bin = 0, k = 1;
+
+    while (num)
+    {
+        bin += (num % 2) * k;
+        k *= 10;
+        num /= 2;
+    }
+
+    return bin;
+}
+int f_resofscalc(char *outputName, int x, int y, int z, float *S, int *binNum){
     _wsetlocale(LC_ALL, L"uk_UA.UTF-8");
     _setmode(_fileno(stdout), _O_U8TEXT);
     _setmode(_fileno(stdin), _O_U8TEXT);
 
     wofstream outputFile;
-
+    int bitSize = 0;
 
     outputFile.open(outputName, ios::app);
     outputFile.imbue(locale(locale(), new codecvt_utf8_utf16<wchar_t>));
-    int x, y, z, b;
-    float S;
-    int result;
-    cout << "Введiть значення x: ";
-    cin >> x;
-    cout << "Введiть значення z: ";
-    cin >> z;
-    do {
-        cout << "Введiть значення y: ";
-        cin >> y;
-        if (y==0){
-                cout << "y не повинен дорiвнювати нулю.";
-        }
-    } while(y==0);
-    cout << "Введiть значення b: ";
-    cin >> b;
 
-        outputFile << L"Результат виконання s_calculation: " << s_calculation(x, y, z) << endl
-               << L"Число B у двійковій системі числення: " << bitset<32>(b);
+    *binNum = dec2bin(*binNum);
+    *S = calculations_s(x, y, z);
+
+    outputFile << L"Результат виконання s_calculation: " << *S << endl
+               << L"Число B у двійковій системі числення: " << *binNum;
 
     outputFile.close();
 
     return 0;
 }
+
+//int f_resofscalc(char *outputName){
+//    _wsetlocale(LC_ALL, L"uk_UA.UTF-8");
+//    _setmode(_fileno(stdout), _O_U8TEXT);
+//    _setmode(_fileno(stdin), _O_U8TEXT);
+//
+//    wofstream outputFile;
+
+
+//    outputFile.open(outputName, ios::app);
+//    outputFile.imbue(locale(locale(), new codecvt_utf8_utf16<wchar_t>));
+//    int x, y, z, b;
+//    float S;
+//    int result;
+//   cout << "Введiть значення x: ";
+//    cin >> x;
+//    cout << "Введiть значення z: ";
+//    cin >> z;
+//    do {
+//        cout << "Введiть значення y: ";
+//        cin >> y;
+//        if (y==0){
+//                cout << "y не повинен дорiвнювати нулю.";
+//        }
+//    } while(y==0);
+//    cout << "Введiть значення b: ";
+//    cin >> b;
+
+//        outputFile << L"Результат виконання s_calculation: " << s_calculation(x, y, z) << endl
+//               << L"Число B у двійковій системі числення: " << bitset<32>(b);
+
+//    outputFile.close();
+
+//    return 0;
+//}
 void first_funct()
 {
     setlocale(LC_ALL,"Ukr");
